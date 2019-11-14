@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			function fib(n, prev1=1, prev2=0){
+				var current = prev1+prev2
+				var fib_str = current + " "
+				if (n>1) {
+					fib_str+=fib(n-1,current,prev1)
+				}
+				return fib_str
+			}
+			alert(fib(20))
+		</script>
+</body>
+</html>
