@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function f(x){
+			document.getElementById('header').style.color=x
+		}
+	</script>
+	<title></title>
+</head>
+<body>
+		<h1 style="color: red" id="header">Header</h1>
+		<button onclick="f('red')">Красный</button>
+		<button onclick="f('green')">Зеленый</button>
+		<button onclick="f('blue')">Синий</button>
+
+		<select onchange="f(this.value)">
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+
+			
+		</select>
+</body>
+</html>

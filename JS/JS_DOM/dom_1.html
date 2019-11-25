@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var c='blue'
+		function f(){
+			document.getElementById('t').style.color=c
+			c=='blue'?c='red':c='blue'
+			setTimeout('f()',1000)
+		}
+	</script>
+	<title></title>
+</head>
+<body onload="f()">
+	<span id='t'>Some Text</span>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+<html>
+<head>
+	<script >
+		var d='pic1.jpg';
+		function f(){
+			document.getElementById('pic').scr=d;
+			d=='pic1.jpg'?d='pic.jpg':d='pic1.jpg';
+			setTimeout('f()',1000);
+
+		}
+	</script>
+	<title></title>
+</head>
+<body onload="f()">
+	
+		<img id='pic' src='pic1.jpg'>
+	
+
+</body>
+</html>
