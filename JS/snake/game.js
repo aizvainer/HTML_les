@@ -79,7 +79,7 @@ function move() {
 }
 
 
-	if (!isSnakeUnit(new_unit) && new_unit != undefined) {
+	if (!isSnakeUnit(new_unit) && new_unit !== undefined) {
 		new_unit.setAttribute('class', new_unit.getAttribute('class')+' snake-unit');
 		snake.push(new_unit);
 
